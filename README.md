@@ -7,11 +7,11 @@
 4. Drag WindowsGSM.exe into previously created folder and execute it.
 
 # Plugin Installation:
-1. Download [latest](https://github.com/ohmcodes/WindowsGSMAlienSwarm/releases/latest) release
+1. Download [latest](https://github.com/ohmcodes/WindowsGSM.AlienSwarm/releases/latest) release
 2. Extract then Move **AlienSwarm.cs** folder to **plugins** folder
 3. OR Press on the Puzzle Icon in the left bottom side and install this plugin by navigating to it and select the Zip File.
 4. Click **[RELOAD PLUGINS]** button or restart WindowsGSM
-5. Navigate "Servers" and Click "Install Game Server" and find "Angels Fall First Dedicated Server [AlienSwarm.cs]
+5. Navigate "Servers" and Click "Install Game Server" and find "Alien Swarm Dedicated Server [AlienSwarm.cs]
 
 ### Official Documentation
 🗃️ https://developer.valvesoftware.com/wiki/Alien_Swarm_Dedicated_Server
