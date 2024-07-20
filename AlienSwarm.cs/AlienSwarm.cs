@@ -34,7 +34,7 @@ namespace WindowsGSM.Plugins
         public override string AppId => "635"; /* taken via https://steamdb.info/app/3017310/info/ */
 
         // - Game server Fixed variables
-        public override string StartPath => "srcds.exee"; // Game server start path
+        public override string StartPath => "srcds.exe"; // Game server start path
         public string FullName = "Alien Swarm Dedicated Server"; // Game server FullName
         public bool AllowsEmbedConsole = true;  // Does this server support output redirect?
         public int PortIncrements = 1; // This tells WindowsGSM how many ports should skip after installation
@@ -71,11 +71,9 @@ namespace WindowsGSM.Plugins
             string param = $" +map {_serverData.ServerMap}";
 
 
-            //param += $" -MULTIHOME={_serverData.ServerIP} ";
-            //param += $" -SteamServerName=\"\"\"{_serverData.ServerName}\"\"\" ";
+            param += $" -ip {_serverData.ServerIP} ";
+            param += $" -port {_serverData.ServerPort} ";
             param += $" -maxplayers {_serverData.ServerMaxPlayer} ";
-            //param += $" -Port={_serverData.ServerPort} ";
-            //param += $" -QueryPort={_serverData.ServerQueryPort} ";
             param += $" {_serverData.ServerParam}";
 
             // Prepare Process
